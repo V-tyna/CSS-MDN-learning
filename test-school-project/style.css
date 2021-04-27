@@ -1,0 +1,136 @@
+/* General setup */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+    float: left;
+    width: 50%;
+}
+
+aside {
+    float: left;
+    width: 30%;
+}
+
+nav {
+    float: left;
+    width: 20%;
+}
+
+footer {
+    clear: both;
+}
+
+header, section, aside, nav, footer {
+    padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+}
+
+/* fonts */
+@font-face {
+    font-family: "headerFont";
+    src: url("fonts/headerFont/DMSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "mainFont";
+    src: url("fonts/mainFont/NotoSansHK-Regular.otf");
+}
+
+h1 {
+    text-align: center;
+}
+
+header, h2, footer {
+    font-family: "headerFont";
+    letter-spacing: 3px;
+}
+
+section, aside, nav {
+    font-family: "mainFont";
+    font-size: 0.85em;
+    line-height: 18px;
+    letter-spacing: 1px;
+    word-spacing: normal;
+    text-align: justify;
+}
+
+section p:first-line {
+    line-height: 20px;
+}
+
+/* Styling links + adding icons */
+
+a:link {
+    color: #934a4a;
+    outline: none;
+}
+
+a[href^="https"] {
+    background: url("external-link-52.png") no-repeat 100% 0;
+    background-size: 15px 15px;
+    padding-right: 20px;
+}
+
+a:visited {
+    color: #aaa360;
+    outline: none;
+}
+
+a:hover {
+    color: #60aa95;
+    text-decoration: none;
+    outline: none;
+}
+
+a:active {
+    color: #aa608f;
+    text-decoration: none;
+    outline: none;
+    background-color: rgba(175, 126, 126, 0.64);
+}
+
+/* Styling lists & nav*/
+ul li{
+    list-style-type: square;
+}
+
+ol li{
+    list-style-type: lower-alpha;
+}
+
+nav ul {
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    list-style-type: none;
+    border: 1px solid #934a4a;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    line-height: 3;
+
+}
+
+nav ul li a {
+    outline: none;
+    text-decoration: none;
+}
